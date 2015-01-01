@@ -1,0 +1,256 @@
+<html> <head> <style> 
+/* CSS FILE */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: #333;
+}
+
+
+h1 {
+  color: #e0dfdc;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 32px;
+  padding: 30px 30px;
+  text-align: center;
+  -webkit-text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #ffffff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.row { 
+  margin: 0 auto;
+ 
+ 
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.row:before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: -5000px;
+
+
+  z-index: -1;
+  background: inherit;
+}
+
+.row span {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.button
+{
+	color: black;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	outline: 0;
+	border-radius: 3px;
+	border: 1px solid #3498db;
+	padding: 12px 22px;
+	text-align: center;
+	background-color: #0066CC;
+	background-image: none;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1px solid #2980b9;
+	box-shadow: 0 1px 1px -1px #909297;
+}/* CSS Document */
+
+input[type="text"],select,textarea {
+  display: inline-block;
+  width: 315px;
+  padding: 10px 0 10px 15px;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  letter-spacing:1px;
+}
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color: #666;
+  text-indent: 0;
+  font-weight: 300;
+}
+input[type="text"] + label,
+select + label,
+textarea + label {
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  top:0;
+  left:0;
+  padding: 12px 15px;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  background: #0066CC;
+  color:#fff;
+  font-size:14px;
+  transition: all 0.3s ease-in-out;
+  border-radius:3px;
+  cursor:pointer;
+}
+input[type="text"] + label:before,
+select + label:before,
+textarea + label:before {
+  background: rgba(3, 36, 41, 0.2);
+  z-index: -2;
+  right: 20%;
+}
+
+span:nth-child(2) input[type="text"],
+span:nth-child(2) select,
+span:nth-child(2) textarea {
+  text-indent: 55px;
+}
+
+span:nth-child(2) input[type="text"]:focus,
+span:nth-child(2) input[type="text"]:active,
+span:nth-child(2) select:focus,
+span:nth-child(2) select:active,
+span:nth-child(2) textarea:focus,
+span:nth-child(2) textarea:active {
+  text-indent: 0;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active  {
+  color: #000;
+  text-indent: 0;
+  background: #fff;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="text"]:active::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+select:active::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+textarea:active::-webkit-input-placeholder  {
+  color: #aaa;
+}
+
+input[type="text"]:focus + label,
+input[type="text"]:active + label,
+select:focus + label,
+select:active + label,
+textarea:focus + label,
+textarea:active + label{
+  text-shadow:none;  
+  padding:0px inherit;	
+  height:0;
+}
+/* radio starts here */
+.radio, .checkbox{
+	width:auto;
+	display:block;
+	background:#fff;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:5px;
+	border-radius: 3px;	
+}
+input[type="radio"], 
+input[type="checkbox"]{
+	width:20px;
+	height:20px;	
+	cursor:pointer;
+}
+input[type="radio"] + f, 
+input[type="checkbox"] + f{
+	color:#666666;
+	text-align:center;
+	position:relative;
+	bottom:5px;
+	font-size:14px;
+}
+.radio input[type="radio"]:first-child,
+.checkbox input[type="checkbox"]:first-child {
+	margin-left:20px;
+}
+
+.radio input[type="radio"] ~ label,
+.checkbox input[type="checkbox"] ~ label{
+  width:100%;
+  height:100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding:10px 0px;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  background: #0066CC;
+  color:#fff;
+  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+  -webkit-transition: all .3s ease-in-out;
+  border-radius:3px;
+  cursor:pointer;
+ }
+.radio input[type="radio"]:focus ~ label,
+.radio input[type="radio"]:active ~ label,
+.checkbox input[type="checkbox"]:focus ~ label,
+.checkbox input[type="checkbox"]:active ~ label{
+  text-shadow:none;  
+  padding:0px 0px;	
+  height:0;
+}
+
+
+/* textarea starts here */
+textarea{
+	padding:15px;
+	height:100px;
+	overflow:hidden;
+	line-height:22px;
+	text-indent:0px;
+	resize:none;
+}
+textarea + label{
+	padding:41px 15px;
+	padding-bottom:42px;
+}
+input[type="submit"]{
+	width:100px;
+	border:none;
+	padding:10px 20px;
+	background:#fff;
+	color:#0066CC;
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+	font-size:18px;
+	border-radius:3px;
+    -webkit-transition: all .3s ease-in-out;
+	cursor:pointer;
+}
+input[type="submit"]:hover{
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+}
+input[type="submit"]:focus,
+input[type="submit"]:active{	
+    text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+	outline:none;
+}</style></head> <body> <form><h1>Form Builder</h1><div class='row'><span><input type='text' class='txtbx' id='name' name='name' placeholder='name' required /><label for='name'>name</label></span></div><div class='row'><span><textarea class='txtarea' id='namr' name='namr' placeholder='namr' required ></textarea><label for='namr'>namr</label></span></div><div class='row'><span><input type='submit' name='' value='Submit' /></span></div></body></table>

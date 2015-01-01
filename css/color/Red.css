@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	color: black;
+	background-color: #333;
+}
+h1{	
+  color: #e0dfdc;
+   text-shadow: 0 -1px 0 #ffffff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="text"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="tel"],
+input[list],
+textarea,
+select,
+a.file{
+	color: #666;
+	background: #efefef;
+	border:none;
+}
+a.radio,
+a.checkbox{	
+	color: #333;
+	background: #efefef;
+	border:none;
+}
+input[type="text"]:active,input[type="text"]:focus,
+input[type="email"]:active,input[type="email"]:focus,
+input[type="number"]:active,input[type="number"]:focus,
+input[type="password"]:active,input[type="password"]:focus,
+input[type="search"]:active,input[type="search"]:focus,
+input[type="url"]:active,input[type="url"]:focus,
+input[type="date"]:active,input[type="date"]:focus,
+input[type="datetime"]:active,input[type="datetime"]:focus,
+input[type="datetime-local"]:active,input[type="datetime-local"]:focus,
+input[type="text"]:active,input[type="text"]:focus,
+input[type="month"]:active,input[type="month"]:focus,
+input[type="time"]:active,input[type="time"]:focus,
+input[type="week"]:active,input[type="week"]:focus,
+input[type="tel"]:active,input[type="tel"]:focus,
+input[list]:active,input[list]:focus,
+textarea:active,textarea:focus,
+select:active,select:focus{	
+	color: #333;
+	background:#fff;	
+	outline: none;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {	
+	background-color: #0F9;
+	background-image: none;
+	color: rgb(0, 0, 0);
+}
+input[type]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+	color:#efefef;
+	
+}
+input[type="time"]::-webkit-input-placeholder{
+	display:none;
+}
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="number"] + label,
+input[type="password"] + label,
+input[type="search"] + label,
+input[type="url"] + label,
+input[type="date"] + label,
+input[type="datetime"] + label,
+input[type="datetime-local"] + label,
+input[type="text"] + label,
+input[type="month"] + label,
+input[type="time"] + label,
+input[type="week"] + label,
+input[type="tel"] + label,
+input[type="color"] + label,
+input[type="range"] + label,
+input[list] ~ label,
+select + label,
+textarea + label,
+a.radio label:last-child,
+a.checkbox label:last-child,
+a.file label:last-child{
+	text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+	background: #c9140c;
+	color:#fff;
+	cursor: pointer;
+}
+
+input[type] + labellast-child:before, input[type] + labellast-child:after,
+input[list] + label:before, input[list] + label:after,
+select + label:before, select + label:after,
+textarea + label:before, textarea + label:after,
+a.radio label:last-child:after, a.radio label:last-child:before,
+a.checkbox label:last-child:after, a.checkbox label:last-child:before{	
+	background: #c9140c;
+}
+input[type] + label:before,
+input[list] + label:before,
+select + label:before,
+textarea + label:before,
+a.radio label:last-child:before,
+a.checkbox label:last-child:before{
+	background: rgba(3, 36, 41, 0.2);
+}
+input[type]:focus::-webkit-input-placeholder,
+input[type]:active::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+select:active::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+textarea:active::-webkit-input-placeholder {
+	color: #aaa;
+}
+a.radio label:after{
+}
+a.radio label:before{
+}
+a.color{
+	color: #000;
+	background: #efefef;
+}
+a.color input[type="color"]{
+	background:#efefef;
+	box-shadow:none;
+}
+a.file label:last-child{
+	color: #000;
+	background: #efefef;
+	text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+}
+a.file label:last-child{
+	color:#fff;
+	background:#c9140c;
+}
+a.file label.lblfile{
+	color:#333;
+	text-shadow:none;
+}
+input[type="range"]{
+	background:#efefef;	
+}
+input[type="range"]:focus, input[type="range"]:active{
+	background:#fff;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ddd;
+    border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    background: #c9140c;
+}
+input[type=range]:focus::-webkit-slider-thumb {
+	box-shadow:0px 0px 10px #777 inset;
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+button,input[type="button"], input[type="reset"]{
+	background:#efefef;
+	color:#666;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover{
+	background:#ccc;
+	color:#000;
+}
+input[type="submit"]{
+	background:#c9140c;
+	color:#fff;
+}
+input[type="submit"]:hover{
+	background:#fff;
+	color:#c9140c;
+}

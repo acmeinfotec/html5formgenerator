@@ -1,0 +1,12 @@
+<html> <head> <style> </style><script>// JavaScript Document
+
+var doChange = function(id){
+	var oldvalue = document.getElementById(id+"lbl").innerHTML;
+    document.getElementById(id+"lbl").innerHTML = document.getElementById(id).value;
+	if(document.getElementById(id+"lbl").innerHTML == "")
+	{
+			document.getElementById(id+"lbl").innerHTML = oldvalue;
+	}
+}
+
+</script></head> <body> <form><h1>Form Builder</h1><div class='row'><span><input type='submit' name='submit' value='Submit' /></span></div></body></table>

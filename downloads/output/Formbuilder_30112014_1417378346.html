@@ -1,0 +1,317 @@
+<html> <head> <style> 
+/* CSS FILE */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  color: black;
+  background-color: #333;
+}
+
+
+h1 {
+  color: #e0dfdc;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 32px;
+  padding: 30px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #ffffff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+
+.row { 
+  margin: 0 auto;
+ 
+ 
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.row:before {
+  position: absolute;
+  content: "";
+
+  top: 0;
+  left: -5000px;
+
+
+  z-index: -1;
+  background: inherit;
+}
+
+.row span {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+}
+
+.button
+{
+	color: black;
+	font-size: 10px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	outline: 0;
+	border-radius: 3px;
+	border: 1px solid #3498db;
+	padding: 12px 22px;
+	text-align: center;
+	background-color: #52be7f;
+	background-image: none;
+	text-decoration: none;
+	display: inline-block;
+	border-bottom: 1px solid #2980b9;
+	box-shadow: 0 1px 1px -1px #909297;
+}/* CSS Document */
+
+input[type="text"],select,textarea {
+  display: inline-block;
+  width: 315px;
+  padding: 10px 10px 10px 15px;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #efefef;
+  border: 0;
+  border-radius: 3px;
+  outline: 0;
+  text-indent: 65px;
+  transition: all .3s ease-in-out;
+}
+input[type="text"]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+  color: #efefef;
+  text-indent: 0;
+  font-weight: 300;
+}
+input[type="text"] + label,
+select + label,
+textarea + label {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 15px;
+  padding-bottom:8px;
+/*  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);*/
+  background: #52be7f;
+  color:#fff;
+  transition: all .4s ease-in-out;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  transform-origin: left bottom;
+  z-index: 99;
+}
+input[type="text"] + label:before, input[type="text"] + label:after,
+select + label:before, select + label:after,
+textarea + label:before, textarea + label:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+  background: #52be7f;
+  transform-origin: left bottom;
+  transition: all .4s ease-in-out;
+  pointer-events: none;
+  z-index: -1;
+}
+input[type="text"] + label:before,
+select + label:before,
+textarea + label:before {
+  background: rgba(3, 36, 41, 0.2);
+  z-index: -2;
+  right: 20%;
+}
+
+span:nth-child(2) input[type="text"],
+span:nth-child(2) select,
+span:nth-child(2) textarea {
+  text-indent: 85px;
+}
+
+span:nth-child(2) input[type="text"]:focus,
+span:nth-child(2) input[type="text"]:active,
+span:nth-child(2) select:focus,
+span:nth-child(2) select:active,
+span:nth-child(2) textarea:focus,
+span:nth-child(2) textarea:active {
+  text-indent: 0;
+}
+
+input[type="text"]:focus,
+input[type="text"]:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active  {
+  color: #000;
+  text-indent: 0;
+  background: #fff;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+input[type="text"]:focus::-webkit-input-placeholder,
+input[type="text"]:active::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+select:active::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+textarea:active::-webkit-input-placeholder  {
+  color: #aaa;
+}
+
+input[type="text"]:focus + label,
+input[type="text"]:active + label,
+select:focus + label,
+select:active + label,
+textarea:focus + label,
+textarea:active + label{
+  transform: rotate(-66deg);
+  border-radius: 3px;
+}
+input[type="text"]:focus + label:before,
+input[type="text"]:active + label:before,
+select:focus + label:before,
+select:active + label:before,
+textarea:focus + label:before,
+textarea:active + label:before  {
+  transform: rotate(10deg);
+}
+
+select + label{
+	padding:10px 15px;
+}
+/* radio starts here */
+.radio{
+	width:auto;
+	text-align:center;
+	display:block;
+	background:#fff;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:5px;
+	padding-left:70px;
+	border-radius: 3px;
+}
+input[type="radio"]{
+	width:20px;
+	height:20px;	
+	margin-left:19px;
+	cursor:pointer;
+}
+input[type="radio"] + f{
+	color:#666666;
+	text-align:center;
+	position:relative;
+	bottom:5px;
+	font-size:14px;
+}
+.radio input[type="radio"] ~ label{
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#fff;
+	background:#52be7f;
+	padding:12px 20px;
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+	transform-origin: left bottom;
+    z-index: 99;
+	transition: all .4s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: left bottom;
+    z-index: 99;
+}
+.radio input[type="radio"]:focus ~ label,
+.radio input[type="radio"]:active ~ label{
+  transform: rotate(-66deg);
+  border-radius: 3px;
+}
+
+/* checkbox starts here */
+.checkbox{
+	width:auto;
+	text-align:center;
+	display:block;
+	background:#fff;
+	padding-right:20px;
+	padding-top:10px;
+	padding-bottom:5px;
+	padding-left:75px;
+	border-radius: 3px;
+}
+input[type="checkbox"]{
+	width:20px;
+	height:20px;	
+	margin-left:20px;
+	cursor:pointer;
+}
+input[type="checkbox"] + f{
+	color:#666666;
+	text-align:center;
+	position:relative;
+	bottom:5px;
+	font-size:14px;
+}
+.checkbox input[type="checkbox"] ~ label{
+	position:absolute;
+	left:0px;
+	top:0px;
+	color:#fff;
+	background:#52be7f;
+	padding:12px 20px;
+	border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+	transform-origin: left bottom;
+    z-index: 99;
+    transition: all .4s ease-in-out;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    transform-origin: left bottom;
+    z-index: 99;
+}
+
+.checkbox input[type="checkbox"]:focus ~ label,
+.checkbox input[type="checkbox"]:active ~ label{
+  transform: rotate(-66deg);
+  border-radius: 3px;
+}
+/* textarea starts here */
+textarea{
+	padding-left:100px;
+	padding-top:15px;
+	padding-bottom:15px;
+	height:100px;
+	overflow:hidden;
+	line-height:22px;
+	letter-spacing:1px;
+	resize:none;
+}
+textarea + label{
+	padding:41px 15px;
+}
+input[type="submit"]{
+	width:100px;
+	border:none;
+	padding:10px 20px;
+	background:#52be7f;
+	color:#fff;
+	font-size:18px;
+    transition: all .4s ease-in-out;
+}
+input[type="submit"]:hover{
+	border-radius:10px;
+}</style></head> <body> <form><h1>Form Builder</h1><div class='row'><span><div class='checkbox'><input type='checkbox' class='chkbx' id='111' name='111' value='222' required ><f>222</f><input type='checkbox' class='chkbx' id='111' name='111' value='333' required ><f>333</f><input type='checkbox' class='chkbx' id='111' name='111' value='444' required ><f>444</f><input type='checkbox' class='chkbx' id='111' name='111' value='555' required ><f>555</f><input type='checkbox' class='chkbx' id='111' name='111' value='666' required ><f>666</f><input type='checkbox' class='chkbx' id='111' name='111' value='777' required ><f>777</f><input type='checkbox' class='chkbx' id='111' name='111' value='888' required ><f>888</f><input type='checkbox' class='chkbx' id='111' name='111' value='999' required ><f>999</f><label for='111' class='lbl'>111</label></div></span></div><div class='row'><span><input type='submit' name='' value='Submit' /></span></div></body></table>

@@ -1,0 +1,602 @@
+<html> <head> <style> 
+/* CSS FILE */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,600,300,800);
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+h1 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 32px;
+  padding: 30px 30px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .1em;
+}
+.row { 
+  margin: 0 auto; 
+  position: relative;
+  text-align: center;
+}
+.row:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: -5000px;
+  z-index: -1;
+  background: inherit;
+}
+.row span {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="text"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="tel"],
+input[list],
+textarea,
+select,
+a.radio,
+a.checkbox,
+a.file{
+	display: inline-block;
+	width: 315px;
+	padding: 10px 10px 10px 15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	border: 0;
+	border-radius: 3px;
+	outline:none;
+	text-indent:50px;
+	letter-spacing:0.5px;
+	font-size:13px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+a.checkbox, a.radio{
+	width:auto;
+	padding:8px 5px;
+	padding-top:13px;
+}
+a.radio, a.checkbox{
+	padding-left:100px;
+	padding:7px 15px;
+}
+a.checkbox input{
+	width:17px;
+	height:17px;
+}
+ a.radio input{
+	width:18px;
+	height:18px;	 
+}
+textarea{
+	height:150px;
+	resize:none;
+	overflow:auto;
+	text-indent:0;
+	line-height:20px;
+	padding-left:45px;
+}
+input[type="text"]:active,input[type="text"]:focus,
+input[type="email"]:active,input[type="email"]:focus,
+input[type="number"]:active,input[type="number"]:focus,
+input[type="password"]:active,input[type="password"]:focus,
+input[type="search"]:active,input[type="search"]:focus,
+input[type="url"]:active,input[type="url"]:focus,
+input[type="date"]:active,input[type="date"]:focus,
+input[type="datetime"]:active,input[type="datetime"]:focus,
+input[type="datetime-local"]:active,input[type="datetime-local"]:focus,
+input[type="text"]:active,input[type="text"]:focus,
+input[type="month"]:active,input[type="month"]:focus,
+input[type="time"]:active,input[type="time"]:focus,
+input[type="week"]:active,input[type="week"]:focus,
+input[type="tel"]:active,input[type="tel"]:focus,
+input[list]:active,input[list]:focus,
+textarea:active,textarea:focus,
+select:active,select:focus{	
+	outline:;
+	text-indent: 0;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+input[type]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,{
+	text-indent: 0;
+	font-weight: 300;
+}
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="number"] + label,
+input[type="password"] + label,
+input[type="search"] + label,
+input[type="url"] + label,
+input[type="date"] + label,
+input[type="datetime"] + label,
+input[type="datetime-local"] + label,
+input[type="text"] + label,
+input[type="month"] + label,
+input[type="time"] + label,
+input[type="week"] + label,
+input[type="tel"] + label,
+input[type="color"] + label,
+input[type="range"] + label,
+input[list] ~ label,
+select + label,
+textarea + label,
+a.radio label:last-child,
+a.checkbox label:last-child{
+	display: inline-block;
+	position: absolute;
+	left:0;
+	top:5%;
+	text-indent:0;
+	padding:9px 15px;
+	padding-bottom:8px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	-webkit-transform-origin: left bottom;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transform-origin: left bottom;
+	-moz-transition: all .4s ease-in-out;
+	-o-transform-origin: left bottom;
+	-o-transition: all .4s ease-in-out;
+	z-index: 99;	
+	font-size:14px;
+}
+a.radio label:last-child,
+a.checkbox label:last-child{
+	padding:10px 15px;
+	top:0;
+}
+a.radio label:last-child{
+	padding-bottom:11px;
+}
+a.radio input + label, a.radio input + label,
+a.checkbox input + label, a.checkbox input + label{
+	position:relative;
+	bottom:5px;
+}
+input[type="date"] + label,
+input[type="datetime-local"] + label,
+input[type="month"] + label,
+input[type="week"] + label,
+input[type="time"] + label{
+	top:2;
+	padding:10px 15px;
+	padding-bottom:11px;
+}
+select + label{
+	top:2;
+	padding:10px 15px;
+	padding-bottom:9px;
+}
+textarea + label{
+	top:0;
+	padding:65px 15px;
+	padding-bottom:66px;
+}
+a.checkbox input{
+	width:17px;
+	height:17px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+
+input[type] + labellast-child:before, input[type] + labellast-child:after,
+input[list] + label:before, input[list] + label:after,
+select + label:before, select + label:after,
+textarea + label:before, textarea + label:after,
+a.radio label:last-child:after, a.radio label:last-child:before,
+a.checkbox label:last-child:after, a.checkbox label:last-child:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	border-radius: 3px;
+	-webkit-transform-origin: left bottom;
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transform-origin: left bottom;
+	-moz-transition: all .4s ease-in-out;
+	-o-transform-origin: left bottom;
+	-o-transition: all .4s ease-in-out;
+	pointer-events: none;
+	z-index: -1;
+}
+input[type] + label:before,
+input[list] + label:before,
+select + label:before,
+textarea + label:before,
+a.radio label:last-child:before,
+a.checkbox label:last-child:before{
+	z-index: -2;	
+	right: 20%;
+}
+input[type]:active + label,input[type]:focus + label,
+input[list]:focus ~ label,input[list]:active ~ label,
+textarea:focus + label,textarea:active + label,
+select:active + label, select:focus + label,
+a.checkbox input[type="checkbox"]:focus ~ label:last-child,
+a.checkbox input[type="checkbox"]:active ~ label:last-child,
+a.color input[type="color"]:focus ~ label,
+a.color input[type="color"]:active ~ label{	
+	-webkit-transform: rotate(-66deg);
+	-moz-transform: rotate(-66deg);
+	-o-transform: rotate(-66deg);
+	border-radius: 3px;
+}
+input[type]:focus + label:before,
+input[type]:active + label:before,
+input[list]:focus + label:before,
+input[list]:active + label:before,
+select:focus + label:before,
+select:active + label:before,
+a.radio input[type]:focus ~ label:before,
+a.radio input[type]:active ~ label:before,
+a.checkbox input[type]:focus ~ label:before,
+a.checkbox input[type]:active ~ label:before,
+a.color input[type="color"]:focus ~ label:before,
+a.color input[type="color"]:active ~ label:before{
+    -webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-o-transform: rotate(15deg);	
+}
+textarea:focus + label:before,
+textarea:active + label:before{
+	-webkit-transform: rotate(10deg);
+	-moz-transform: rotate(10deg);
+	-o-transform: rotate(10deg);	
+}
+a.radio input[type="radio"]:focus ~ .lbl,
+a.radio input[type="radio"]:active ~ .lbl,
+a.file input[type="file"]:active ~ label:last-child,
+a.file input[type="file"]:focus ~ label:last-child{	
+	-webkit-transform: rotate(-66deg);
+	-moz-transform: rotate(-66deg);
+	-o-transform: rotate(-66deg);
+	border-radius: 3px;
+}
+a.color{	
+	display: inline-block;
+	width: 100px;
+	height:45px;
+	padding: 10px 10px 10px 15px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	border: 0;
+	border-radius: 3px;
+	outline: 0;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+a.color label{
+	top:0;
+	padding:14px 32px;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+}
+a.color input[type="color"] {
+	display:inline;
+	position:absolute;
+	top:0;
+	left:96%;
+	-webkit-appearance:none;
+	float:right;
+	border-radius:100%;
+	padding:8px;
+	width: 45px;
+	height: 45px;
+	border:none;
+	z-index:99;
+	cursor:pointer;
+}
+a.file{
+	height:36px;
+	width:auto;
+}
+a.file label:last-child{	
+	display: inline-block;
+	padding:10px 15px;
+	padding-bottom:9px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-weight: 400;
+	position:absolute;
+	top:0;
+	left:0;
+	border: 0;
+	outline: 0;
+	text-indent:0;
+	font-size:14px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	cursor:pointer;
+}
+a.file input[type="file"]{
+	display:none;
+}
+a.file label.lblfile{
+	background:none;
+	font-size:13px;
+	padding:0;
+	padding-right:10px;
+	padding-top:7px;
+	padding-left:70px;
+	text-align:right;
+}
+input[type="range"]{
+	-webkit-appearance: slider-horizontal;
+	height:36px;
+	width:354px;
+	border-radius:3px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+input[type=range]{
+    -webkit-appearance: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+	position:relative;
+    width: 300px;
+    height: 5px;
+    border-radius: 3px;
+	margin:15px;
+	margin-left:80px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border: none;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin-top: -4px;
+	cursor:pointer;	
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"]{
+	-webkit-transition:all 0.3s linear;
+	padding:10px 20px;
+	font-size:16px;
+	border-radius:3px;
+	border:none;
+	cursor:pointer;
+}
+button:active, input[type="reset"]:active,
+button:focus, input[type="reset"]:focus,
+input[type="button"]:active, input[type="button"]:focus,
+input[type="submit"]:active, input[type="submit"]:focus{
+	outline:none;
+}@charset "utf-8";
+/* CSS Document */
+
+html,
+body {
+	color: black;
+	background-color: #333;
+}
+h1{	
+  color: #e0dfdc;
+   text-shadow: 0 -1px 0 #ffffff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="search"],
+input[type="url"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="text"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="tel"],
+input[list],
+textarea,
+select,
+a.file{
+	color: #666;
+	background: #efefef;
+	border:none;
+}
+a.radio,
+a.checkbox{	
+	color: #333;
+	background: #efefef;
+	border:none;
+}
+input[type="text"]:active,input[type="text"]:focus,
+input[type="email"]:active,input[type="email"]:focus,
+input[type="number"]:active,input[type="number"]:focus,
+input[type="password"]:active,input[type="password"]:focus,
+input[type="search"]:active,input[type="search"]:focus,
+input[type="url"]:active,input[type="url"]:focus,
+input[type="date"]:active,input[type="date"]:focus,
+input[type="datetime"]:active,input[type="datetime"]:focus,
+input[type="datetime-local"]:active,input[type="datetime-local"]:focus,
+input[type="text"]:active,input[type="text"]:focus,
+input[type="month"]:active,input[type="month"]:focus,
+input[type="time"]:active,input[type="time"]:focus,
+input[type="week"]:active,input[type="week"]:focus,
+input[type="tel"]:active,input[type="tel"]:focus,
+input[list]:active,input[list]:focus,
+textarea:active,textarea:focus,
+select:active,select:focus{	
+	color: #333;
+	background:#fff;	
+	outline: none;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {	
+	background-color: #0F9;
+	background-image: none;
+	color: rgb(0, 0, 0);
+}
+input[type]::-webkit-input-placeholder,
+select::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder{
+	color:#efefef;
+	
+}
+input[type="time"]::-webkit-input-placeholder{
+	display:none;
+}
+input[type="text"] + label,
+input[type="email"] + label,
+input[type="number"] + label,
+input[type="password"] + label,
+input[type="search"] + label,
+input[type="url"] + label,
+input[type="date"] + label,
+input[type="datetime"] + label,
+input[type="datetime-local"] + label,
+input[type="text"] + label,
+input[type="month"] + label,
+input[type="time"] + label,
+input[type="week"] + label,
+input[type="tel"] + label,
+input[type="color"] + label,
+input[type="range"] + label,
+input[list] ~ label,
+select + label,
+textarea + label,
+a.radio label:last-child,
+a.checkbox label:last-child,
+a.file label:last-child{
+	text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+	background: #1a7d3b;
+	color:#fff;
+	cursor: pointer;
+}
+
+input[type] + labellast-child:before, input[type] + labellast-child:after,
+input[list] + label:before, input[list] + label:after,
+select + label:before, select + label:after,
+textarea + label:before, textarea + label:after,
+a.radio label:last-child:after, a.radio label:last-child:before,
+a.checkbox label:last-child:after, a.checkbox label:last-child:before{	
+	background: #1a7d3b;
+}
+input[type] + label:before,
+input[list] + label:before,
+select + label:before,
+textarea + label:before,
+a.radio label:last-child:before,
+a.checkbox label:last-child:before{
+	background: rgba(3, 36, 41, 0.2);
+}
+input[type]:focus::-webkit-input-placeholder,
+input[type]:active::-webkit-input-placeholder,
+select:focus::-webkit-input-placeholder,
+select:active::-webkit-input-placeholder,
+textarea:focus::-webkit-input-placeholder,
+textarea:active::-webkit-input-placeholder {
+	color: #aaa;
+}
+a.radio label:after{
+}
+a.radio label:before{
+}
+a.color{
+	color: #000;
+	background: #efefef;
+}
+a.color input[type="color"]{
+	background:#efefef;
+	box-shadow:none;
+}
+a.file label:last-child{
+	color: #000;
+	background: #efefef;
+	text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
+}
+a.file label:last-child{
+	color:#fff;
+	background:#1a7d3b;
+}
+a.file label.lblfile{
+	color:#333;
+	text-shadow:none;
+}
+input[type="range"]{
+	background:#efefef;	
+}
+input[type="range"]:focus, input[type="range"]:active{
+	background:#fff;
+}
+input[type=range]::-webkit-slider-runnable-track {
+    background: #ddd;
+    border: none;
+}
+input[type=range]::-webkit-slider-thumb {
+    background: #1a7d3b;
+}
+input[type=range]:focus::-webkit-slider-thumb {
+	box-shadow:0px 0px 10px #777 inset;
+    outline: none;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ccc;
+}
+button,input[type="button"], input[type="reset"]{
+	background:#efefef;
+	color:#666;
+}
+button:hover, input[type="button"]:hover, input[type="reset"]:hover{
+	background:#ccc;
+	color:#000;
+}
+input[type="submit"]{
+	background:#1a7d3b;
+	color:#fff;
+}
+input[type="submit"]:hover{
+	background:#fff;
+	color:#1a7d3b;
+}</style><script>// JavaScript Document
+
+var doChange = function(id){
+	var oldvalue = document.getElementById(id+"lbl").innerHTML;
+    document.getElementById(id+"lbl").innerHTML = document.getElementById(id).value;
+	if(document.getElementById(id+"lbl").innerHTML == "")
+	{
+			document.getElementById(id+"lbl").innerHTML = oldvalue;
+	}
+}
+
+</script></head> <body> <form><h1>Form Builder</h1><div class='row'><span><input type='password' class='password' id='' name='' placeholder='' required /><label for=''></label></span></div><div class='row'><span><input type='datetime' class='datetime' id='' name='' placeholder='' required /><label for=''></label></span></div><div class='row'><span><input type='url' class='url' id='' name='' placeholder='' required /><label for=''></label></span></div><div class='row'><span><input type='email' class='email' id='' name='' placeholder='' required /><label for=''></label></span></div><div class='row'><span><input type='password' class='password' id='' name='' placeholder='' required /><label for=''></label></span></div><div class='row'><span><input type='submit' name='submit' value='Submit' /></span></div></body></table>
