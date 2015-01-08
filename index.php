@@ -1,37 +1,20 @@
 <!DOCTYPE html>
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-<meta name="description" content="You can generate HTML5 & CSS3 form easily and you can download it for further process">
-<meta name="keywords" content="html5 form generator,online html5 form,html5 and css3 forms,online html5 form generator,free online html form generator,online html5 and css3 form generator free,free html5 form generator,html5 form generator with css3,css3 and html5 form generator for free, free online form generator,free online form generator for html5 and css3,free html and css3 form designer,html5 and css3 form generator for free online">
-<meta name="subject" content="Html form generator is an online Form Generator in HTML5 and CSS3. When you develop any HTML5 form design using a normal html and CSS it takes larger working time to develop it. So, we reduce the working time of a designer to designing an html form design and also to consume their working time with a neat designing work. We develop new software for designing html form with a time reducing complexity, with a neat design work is named as HTML5formgenerator. ">
-<meta name="copyright" content="Acme Groups">
-<meta name="author" content="Acme Groups,acmeinfotec@gmail.com">
-<meta name="URL" content="www.html5formgenerator.com">
-<meta name="identifier-URL" content="www.html5formgenerator.com">
 <head>
-<title>HTML5 Form Generator</title>
-<meta charset="utf-8" />
-<link href="css/main.css" type="text/css" rel="stylesheet" />
+	<title>HTML5 Form Builder</title>
+	<meta charset="utf-8" />
+	<link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-58044562-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 <body style="font-family:Verdana, Arial, Helvetica, sans-serif;">
-	<table cellpadding="0" cellspacing="0" align="center" width="100%;">
-	  <tr>
-		<td>			
+<table cellpadding="0" cellspacing="0" align="center" width="100%;">
+	<tr>
+		<td>
 			<?php include("header.php"); ?>
 		</td>
-	  </tr>
-	  <tr>
-	  	<td>
+	</tr>
+	<tr>
+		<td>
 			<div class="mainbody">
 				<div class="header">
 					Steps For Handle
@@ -40,36 +23,116 @@
 					<table cellpadding="0" cellspacing="0" align="center" width="100%" >
 						<tr>
 							<td>
-								<div class="step step-1">
-									<span>1</span>- HTML5 FORM GENERATOR
-								</div>
-								<div class="step-body">
-									<div class="step-text">
-										<span>H</span>tml5 form generator is an online Form Generator in HTML5 and CSS3. When you develop any HTML5 form design using a normal html and CSS it takes larger working time to develop it. So, we reduce the working time of a designer to designing an html form design and also to consume their working time with a neat designing work.
-									</div>
-								</div>
-							</td>							
-							<td>
-								<div class="step step-2">
-									<span>2</span>- WHY ?
-								</div>
-								<div class="step-body">
-									<div class="step-text">
-										<span>M</span>ost of the people very interest to develop their own Html5 form design, but they know only about the basic things about html and their tags. 
-                                They made many mistake when design time or when they apply their style to it.  
-                                To avoid all of these we have developed new software, form former in HTML5 Form Generator. 
+								<!--<div class="slogan1">
+									Get Your Stylish Web Form
+								</div>-->
+								<div class="content-slider-index" >
+									<div class="content-slider1">
+										<div>
+											<div class="h2">Who Am I ?</div>
+											<div class="para1">
+												Html5 Form Generator is a free online html form designer using HTML5 & CSS and it is an open source project. We release as a free online html5 tools to creating various html5 form design. When a designer develops any HTML5 form design using a normal html and CSS it takes larger working time to develop it. In online you have various opportunities to develop any kind of form designs. Now, you have to use many free online tools to develop the html forms easily and some of them release tools as a open source to develop .We have many free online html tools are also available for designing a html form,  but it will be different from html5 form generator.
+											</div>
+											<div class="img1">
+												<img src="images/17-who-am-i.jpg" />
+											</div>
+										</div>
+										<div>
+											<div class="h2">Why Am I ?</div>
+											<div class="para1">
+												Most of the website is developed using the PHP, HTML5, CSS3 and some other scripting languages also used for the style in it. Normally, we have developed a simple html form design with typing many codes and adding style sheets in it, for good look in your form design and also you need a good style in it. Now we can change that using the HTML5 Form Generator.
+											</div>
+											<div class="img1">
+												<img src="images/why-me2.jpg" />
 
-									</div>
-								</div>
-							</td>
-							<td>
-								<div class="step step-3">
-									<span>3</span>- WHAT ?
-								</div>
-								<div class="step-body">
-									<div class="step-text">
-										<span>H</span>TML5 FORM GENERATOR is used to generate HTML5 and CSS3 forms easily. 
-                                It reduces your designing time and you can finish you project or any design in an easy way quickly.
+											</div>
+										</div>
+										<div>
+											<div class="h2">How Am I ?</div>
+											<div class="list1">
+												<div class="list-container1">
+													<ul>
+														<li><div></div><div>Working in html5 form generator is not so different is just a click.</div></li>
+														<li><div></div><div>To start your project click Start now button.</div></li>
+														<li><div></div><div>You have to select your style to your controls in your design and then select the color for your controls.</div> </li>
+														<li><div></div><div>Then, click next button to go to next process. </div></li>
+														<li><div></div><div>Now, you have to add controls to your form design, just select the controls from the drop down menu and give the field is required or not and also must to give the name for the controls.</div></li>
+														<li></li>
+													</ul>
+												</div>
+												<div class="list-container1 list-how">
+													<div class="list-title">Text Fields (7)</div>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Text Box</div></li>
+														<li><div></div><div style="width: 90%">Password</div> </li>
+														<li><div></div><div style="width: 90%">Email</div></li>
+														<li><div></div><div style="width: 90%">Number</div></li>
+													</ul>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Search</div></li>
+														<li><div></div><div style="width: 90%">URL</div></li>
+														<li><div></div><div style="width: 90%">Paragraph</div></li>
+													</ul>
+												</div>
+												<div class="list-container1 list-how">
+													<div class="list-title">List Fields (4)</div>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Check Box List</div></li>
+														<li><div></div><div style="width: 90%">Data List</div> </li>
+														<li><div></div><div style="width: 90%">Radio List</div></li>
+														<li><div></div><div style="width: 90%">Select List</div></li>
+													</ul>
+												</div>
+
+												<div class="list-container1 list-how">
+													<div class="list-title">Data/Time Fields (6)</div>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Date</div></li>
+														<li><div></div><div style="width: 90%">Month</div> </li>
+														<li><div></div><div style="width: 90%">Time</div></li>
+														<li><div></div><div style="width: 90%">Week</div></li>
+													</ul>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Date &Time</div></li>
+														<li><div></div><div style="width: 90%">Date & Time Local</div></li>
+													</ul>
+												</div>
+												<div class="list-container1 list-how">
+													<div class="list-title" style="width: 30%; display: inline-block;">Button Fields (3)</div>
+													<div class="list-title" style="width: 59%; display: inline-block; text-align: left;">Other Fields (4)</div>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Button</div></li>
+														<li><div></div><div style="width: 90%">Reset</div> </li>
+														<li><div></div><div style="width: 90%">Submit</div></li>
+														<li><div></div><div style="width: 90%">Week</div></li>
+													</ul>
+													<ul style="width: 30%; display: inline-block;">
+														<li><div></div><div style="width: 90%">Color</div></li>
+														<li><div></div><div style="width: 90%">Range</div></li>
+														<li><div></div><div style="width: 90%">File Upload</div></li>
+														<li><div></div><div style="width: 90%">Telephone Number</div></li>
+													</ul>
+												</div>
+
+											</div>
+											<div class="img1" style="margin: 0;">
+												<img src="images/how_we_do2.jpg" />
+
+											</div>
+										</div>
+										<div>
+											<div class="h2">What Am I ?</div>
+											<div class="para1">
+												Now a days, most of the people are interested in designing, but also that includes most of them have less knowledge about the scripting languages. But they are very eager to designing in an html5 and css3. In most of the website, the designs are developed using scripting languages, style sheet and some other Markup languages are also used for building their forms designs easily. But it is not good; it will make your work as more extensible and also consume long duration time to done it.
+											</div>
+											<div class="para2">
+												HTML5 Form Generator is fully developed for designing a form using HTML5 and CSS3. Normally, for a single form design we are using HTML and CSS codes to get a neat form design with styles in it.HTML5formgenerator is fully developed for designing a form using HTML5 and CSS3. Normally, for a single form design we are using HTML and CSS codes to get a neat form design with styles in it.
+											</div>
+
+											<div class="img1" style="bottom: 160px">
+												<img src="images/why_need_website_manager_1.png" />
+											</div>
+										</div>
 									</div>
 								</div>
 							</td>
@@ -78,57 +141,75 @@
 				</div>
 			</div>
 		</td>
-	  </tr>
-	  <tr>
-	  	<td>
-			<div class="footer-top" align="center">
-				<a href="selection.php" class="btnstart"> Start Now </a>
+	</tr>
+	<tr>
+		<td>
+			<div class="content-slider-btns">
+				<ul>
+					<li id="slideBtn1" >1</li>
+					<li id="slideBtn2" >2</li>
+					<li id="slideBtn3" >3</li>
+					<li id="slideBtn4" >4</li>
+				</ul>
 			</div>
 		</td>
-	  </tr>
-	  <tr>
-	  	<td>
+	</tr>
+	<tr>
+		<td>
+			<div class="footer-top" align="center">
+				<a href="selection.php" class="btnstart"> HTML5 Form Generator </a> <a href="meta-tag-generator/index.php" class="btnstart"> Meta Tag Generator </a>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
 			<div class="footer" >
 				<div style="float:left;">
 					@copyrights from developers of Acme Groups | 2014
 				</div>
 				<div style="float:right;">
-					
+
 				</div>
 			</div>
 		</td>
-	  </tr>
-	  <!--<tr>
-	  	<td>
-			<div class="mainbody">
-			   <form method="get" action="home.php">
-				<table cellpadding="0" cellspacing="0" align="left" width="100%">
-				  <tr>
-					<td><div class="header">jQuery FormBuilder</div></td>
-				  </tr>
-				  <tr>
-					<td><div style="padding-top:50px;">
-						<div>Select Your Form Style</div>
-					  </div>
-					  <div style="margin-top:20px;">
-						<select id="form-style" name="form-style" style="padding:5px; padding-left:10px;padding-right:10px;" required="true" >
-						  <option value="0">Select Here</option>
-						  <option value="1">Style One</option>
-						  <option value="2">Style Two</option>
-						  <option value="3">Style Three</option>
-						</select>
-					  </div></td>
-				  </tr>
-				  <tr>
-					<td><input type="submit" name="submit" id="submit" value="Seleted" style="margin-top:10px;position:relative;left:60px;" align="right" />
-					</td>
-				  </tr>
-				</table>
-			  </form>
-		  </div>
-		 </td>
-	  </tr>-->
-	</table>
+	</tr>
+</table>
 </body>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery-latest.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('#slideBtn1').click(function(){
+				$(".content-slider1").css({"bottom":"0px"});
+//				$("#slideBtn2").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//				$("#slideBtn3").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//				$("#slideBtn4").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//				$(this).css({"backgroundColor":"#33CCFF", "color":"#ffffff", "font-weight":"bold", "border":"none"});
+		});
+		$('#slideBtn2').click(function(){
+			$(".content-slider1").css({"bottom":"300px"});
+//			$("#slideBtn1").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn3").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn4").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$(this).css({"backgroundColor":"#33CCFF", "color":"#ffffff", "font-weight":"bold", "border":"none"});
+		});
+		$('#slideBtn3').click(function(){
+			$(".content-slider1").css({"bottom":"600px"});
+//			$("#slideBtn2").css({"backgroundColor":"#ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn1").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn4").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$(this).css({"backgroundColor":"#33CCFF", "color":"#ffffff", "font-weight":"bold", "border":"none"});
+		});
+		$('#slideBtn4').click(function(){
+			$(".content-slider1").css({"bottom":"900px"});
+//			$("#slideBtn2").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn3").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$("#slideBtn1").css({"backgroundColor":"ffffff", "color":"#999999", "font-weight":"none", "border":"1px solid #999999"});
+//			$(this).css({"backgroundColor":"#33CCFF", "color":"#ffffff", "font-weight":"bold", "border":"none"});
+		});
+	});
+</script>
 </html>
+;

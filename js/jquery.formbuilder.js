@@ -863,7 +863,7 @@
 		serialStr += opts.prepend + '[' + style_pos + '][style_number]=' +  form_style_value;
 		serialStr += opts.prepend + '[' + style_pos + '][color_name]=' +  form_color_value;
 		
-//		alert(serialStr);
+	//	alert(serialStr);
 		return (serialStr);
 	};
 })(jQuery);

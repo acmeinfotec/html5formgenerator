@@ -1,0 +1,1 @@
+<html> <head> <link type='text/css' href='style2' rel='stylesheet' /> </head> <body> <form><input type='text' class='txtbx' id='' name='' required /> <br /><input type='checkbox' class='chkbx' id='' name='' value='' required >  <br /> </form> </body> </html>

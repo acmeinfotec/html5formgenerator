@@ -1,15 +1,8 @@
 <!DOCTYPE html>
 <html>
 	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <meta name="description" content="You can generate HTML5 & CSS3 form easily and you can download it for further process">
-<meta name="keywords" content="html5 form generator,online html5 form,html5 and css3 forms,online html5 form generator,free online html form generator,online html5 and css3 form generator free,free html5 form generator,html5 form generator with css3,css3 and html5 form generator for free, free online form generator,free online form generator for html5 and css3,free html and css3 form designer,html5 and css3 form generator for free online">
-<meta name="subject" content="Html form generator is an online Form Generator in HTML5 and CSS3. When you develop any HTML5 form design using a normal html and CSS it takes larger working time to develop it. So, we reduce the working time of a designer to designing an html form design and also to consume their working time with a neat designing work. We develop new software for designing html form with a time reducing complexity, with a neat design work is named as HTML5formgenerator. ">
-<meta name="copyright" content="Acme Groups">
-<meta name="author" content="Acme Groups,acmeinfotec@gmail.com">
-<meta name="URL" content="www.html5formgenerator.com">
-<meta name="identifier-URL" content="www.html5formgenerator.com">
 <head>
-		<title>HTML5 Form Generator</title>
+		<title>HTML5 Form Builder</title>
 		<meta charset="utf-8" />
 		<script src="js/jquery-latest.min.js"></script>
 		<script src="js/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>

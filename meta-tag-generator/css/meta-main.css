@@ -1,0 +1,199 @@
+body {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color: #333333;
+}
+.meta-index-header{
+    margin-top: 6%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding-bottom: 1%;
+    font-size: 20px;
+    border-bottom: solid 1px #cccccc;
+}
+.meta-index-body {
+    margin: 2% 3%;
+    font-size: 14px;
+    float: left;
+    width: 40%;
+}
+.contentSlider{
+    display:block;
+    width:94%;
+    height:auto;
+    margin: 2% 3%;
+    margin-bottom: 1%;
+    overflow: hidden;
+}
+.contentSlider .contentContainer{
+    width:200%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    left: 0%;
+    -moz-transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -o-transition: all 1s ease;
+}
+.contentSlider .contentContainer div {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+.meta-index-body td > div:first-child {
+    margin: 2% 5%;
+    margin-bottom: 1%;
+}
+.meta-index-body td div input {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #666666;
+    width: 250px;
+    height: 24px;
+    padding: 5px 10px;
+}
+.meta-index-body td div select{
+    width: 272px;
+    height: 35px;
+    font-size: 14px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color: #666666;
+    border: 1px solid #cccccc;
+    padding: 5px 10px;
+    box-shadow: none;
+    background-color: transparent;
+    overflow: hidden;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+    -o-appearance:none;
+    -ms-appearance:none;
+    appearance:none;
+}
+.meta-index-body td div input[type="radio"] {
+    display: none;
+    width: 20px;
+}
+.radioOnOff{
+    width: 270px;
+    height: 32px;
+    margin: 0;
+    cursor: pointer;
+    border: 1px solid #cccccc;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0;
+}
+.radioOnOff div{
+    width: 133px;
+    display: inline-block;
+    padding: 9px 0px;
+    color: #999999;
+    text-align: center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.radioOnOff div:hover{
+    background-color: #cccccc;
+    color: #ffffff;
+}
+.radioOnOff:before{
+    text-align:center;
+    padding-top: 10px;
+    display: inline;
+    position:absolute;
+    content:'YES';
+    width:135px;
+    height:20px;
+    border: 1px solid #00CCFF;
+    background:#00CCFF;
+    color: #ffffff;
+    -webkit-transition:all 0.3s linear;
+    -moz-transition:all 0.3s linear;
+    -o-transition:all 0.3s linear;
+}
+input.radioNo:checked ~ .radioOnOff{
+    display: none;
+}
+input.radioYes:checked ~ .radioOnOff{
+    display: none;
+}
+.meta-index-body td div textarea {
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    font-size: 14px;
+    color: #666666;
+    width: 250px;
+    height: 80px;
+    background: none;
+    border: 1px solid #cccccc;
+    padding:5px 10px;
+    overflow: hidden;
+    resize: none;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+}
+.meta-index-body td div textarea:focus,
+.meta-index-body td div textarea:active {
+    border: 1px solid #33CCFF;
+}
+.btnGenerate {
+    text-align: center;
+}
+.btnGenerate button {
+    margin-top: 3%;
+    margin-right: 3%;
+    padding:10px 20px;
+    background: #33CCFF;;
+    color: #ffffff;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+.btnGenerate button:hover {
+    background-color: #ffffff;
+    color:#33CCFF;
+    border: 1px solid #33CCFF;
+}
+.meta-index-preview {
+    margin-right: 3%;
+    margin-left: 20%;
+    margin-top: 2%;
+    width: 100%;
+    background-color: #333333;
+    border-radius: 5px;
+    float: right;
+    margin-bottom: 0;
+}
+.meta-index-preview > div{
+    padding: 2% 3%;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    color: #00CCFF;
+    line-height: 25px;
+    letter-spacing: 0.7px;
+    text-shadow:#ffffff 0px 0px 0.3px ;
+}
+.green_txt{
+    color: #b6ff00;
+}
+.white_txt{
+    color: #cccccc;
+}
+.orange_txt{
+    color: #ffcf00;
+}
+/*
+::selection, body::-moz-selection{
+    background: #666666;
+    color: #eeeeee;
+}
+*/

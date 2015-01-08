@@ -3,52 +3,201 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>Untitled Document</title>
+<link href="css/style/html5-form-generator-style-11.css" type="text/css" rel="stylesheet" />
+<link href="css/color/html5-form-generator-color-Voilet.css" type="text/css" rel="stylesheet" />
+<script type="text/javascript" src="js/style.js" ></script>
 </head>
-<link href="css/css-5.css" type="text/css" rel="stylesheet" />
 <body>
-<div style="margin:100px;">
+<form>
+  <div class="row"> 
+  	<span>
+		<input id="uname" type="text" placeholder="UserName" />
+		<label for="uname">UserName</label>
+    </span>
+  </div>  
+ 
+  <div class="row"> 
+  	<span>
+		<input id="tel" type="tel" placeholder="TelePhone" required="required" />
+		<label for="tel">TelePhone</label>
+    </span>
+  </div>
+ 
+  <div class="row"> 
+  	<span>
+		<input id="time" type="time" placeholder="Time" required="required" />
+		<label for="time">Time</label>
+    </span>
+  </div>
+  	
+  <div class="row"> 
+  	<span>
+		<input id="number" type="number" placeholder="Number" required="required" />
+		<label for="number">Number</label>
+    </span>
+  </div>	
+   
+  <div class="row"> 
+  	<span>
+		<input id="week" type="week" placeholder="Week" required="required" />
+		<label for="week">Week</label>
+    </span>
+  </div>	
+  
+  <div class="row"> 
+  	<span>
+		<input id="url" type="url" placeholder="URL" required="required" />
+		<label for="url">URL</label>
+    </span>
+  </div>	
+  
+  <div class="row"> 
+  	<span>
+		<input id="month" type="month" placeholder="Month" required="required" />
+		<label for="month">Month</label>
+    </span>
+  </div>	 
+  
+  <div class="row"> 
+  	<span>
+		<input id="search" type="search" placeholder="Search" required="required" />
+		<label for="search">Search</label>
+    </span>
+  </div>	
+    
+  <div class="row"> 
+  	<span>
+		<input id="pass" type="password" placeholder="Password" required="required" />
+		<label for="pass">Password</label>
+    </span>
+  </div>	
+  
+  <div class="row"> 
+  	<span>
+		<input id="email" type="email" placeholder="email" />
+		<label for="email">Email</label>
+    </span>
+  </div>
+	
+  <div class="row"> 
+  	<span>
+		<input id="date" type="date" placeholder="Date" />
+		<label for="date">Date</label>
+    </span>
+  </div>
+  
+  <div class="row"> 
+  	<span>
+		<input id="datetime" type="datetime" placeholder="Date & Time" />
+		<label for="datetime">Date & Time</label>
+    </span>
+  </div>
+  
+  <div class="row"> 
+  	<span>
+		<input id="datetime-local" type="datetime-local" placeholder="Date & Time Local" />
+		<label for="datetime-local">Date & Time Local</label>
+    </span>
+  </div>
+  
+  <div class="row"> 
+  	<span>
+	 	<input list="browsers" name="brows" id="brows">
+		<datalist id="browsers">
+		  <option value="Internet Explorer">
+		  <option value="Firefox">
+		  <option value="Chrome">
+		  <option value="Opera">
+		  <option value="Safari">
+		</datalist>
+        <label for="brows"> Browser </label>
+    </span>
+  </div>  
+		
+  <div class="row"> 
+ 	<span>
+		<textarea name="txtarea" id="txtarea" placeholder="Address" ></textarea>
+		<label for="txtarea" >Address</label>
+    </span> 
+  </div>
   <div class="row"> <span>
-    <input id="uname" type="text" placeholder="UserName" />
-    <label for="uname">UserName</label>
-    </span> </div>
-  <div class="row"> <span>
-    <textarea name="txtarea" placeholder="Address" ></textarea>
-    <label for="txtarea" >Address</label>
-    </span> </div>
-  <div class="row"> <span>
-    <select name="select" placeholder="Qualification" >
+    <select name="select" id="select" placeholder="Qualification" >
       <option>M.Phil</option>
       <option>M.Sc</option>
       <option>B.Sc</option>
     </select>
-    <label for="txtarea" >Qualification</label>
+    <label for="select" >Qualification</label>
     </span> </div>
   <div class='row'><span>
-    <div class='checkbox'>
-      <input type='checkbox' class='chkbx' id='Qualification' name='Qualification' value='UG' required >
-      <f>Tamil</f>
-      <input type='checkbox' class='chkbx' id='Qualification' name='Qualification' value='PG' required >
-      <f>Hindi</f>
-      <input type='checkbox' class='chkbx' id='Qualification' name='Qualification' value='PG' required >
-      <f>English</f>
-      <label for='Qualification' class='lbl'>Language</label>
-    </div>
+    <a class='checkbox' name="check1" id="check1">
+      <input type='checkbox' class='chkbx' id='Q1' name='Qualification1' value='UG'  >
+      <label for="Q1">Tamil</label>
+      <input type='checkbox' class='chkbx' id='Q2' name='Qualification1' value='PG'  >
+      <label for="Q2">Hindi</label>
+      <input type='checkbox' class='chkbx' id='Q3' name='Qualification1' value='PG'  >
+      <label for="Q3">English</label>
+      <input type='checkbox' class='chkbx' id='Q4' name='Qualification1' value='UG'  >
+      <label for="Q4">Tamil</label>
+      <input type='checkbox' class='chkbx' id='Q5' name='Qualification1' value='PG'  >
+      <label for="Q5">Hindi</label>
+      <input type='checkbox' class='chkbx' id='Q6' name='Qualification1' value='PG'  >
+      <label for="Q6">English</label>
+      <label for='Q1' class='lbl'>Language</label>
+    </a>
     </span></div>
   <div class='row'><span>
-    <div class='radio'>
-      <input type='radio' class='chkbx' id='Gender' name='Gender' value='Male' required >
-      <f>Male</f>
-      <input type='radio' class='chkbx' id='Gender' name='Gender' value='Female' required >
-      <f>Female</f>
-      <label for='Gender' class='lbl'>Gender</label>
-    </div>
+    <a class='radio' name="radio1" id="radio1" >
+      <input type='radio' class='chkbx' id='m1' name='Gender' value='Male' >
+      <label for="m1">Male</label>
+      <input type='radio' class='chkbx' id='f1' name='Gender' value='Female' >
+      <label for="f1">Female</label>
+      <input type='radio' class='chkbx' id='m2' name='Gender' value='Male' >
+      <label for="m2">Male</label>
+      <input type='radio' class='chkbx' id='f2' name='Gender' value='Female' >
+      <label for="f2">Female</label>
+      <label for='m1' class='lbl'>Gender</label>
+    </a>
     </span>
   </div>
+  
+  <div class="row"> 
+  	<span >
+    	<a id="mycolor" name="mycolor" class="color" >
+			<input id="color" type="color" placeholder="Color"  />
+		<label for="color">Color</label>
+        </a>
+    </span >
+  </div> 
+   
+  <div class="row"> 
+  	<span>
+    	<a class="file">
+            <input id="file1" type="file" onchange="doChange(this.id)" placeholder="File Upload" required="required" />
+            <label for="file1" class="lblfile"  id="file1lbl" style="background:#efefe;">No File Located</label>
+            <label for="file1">File Upload</label>
+        </a>
+    </span>
+  </div>
+
+  <div class="row"> 
+  	<span>
+    	<input id="range" type="range" name="points" min="1" max="10" placeholder="TelePhone" required="required" />
+		<label for="range">Range</label>
+    </span>
+  </div>
+  
+  <div class="row"> 
+  	<span>
+		<button> Button </button><input type="reset" value="Reset" />
+    </span>
+  </div>
+  
   <div class="row">
   	<span>
-		<input type="submit" name="" value="Submit" />
+		<input type="submit" name="submit" value="Submit" />
 	</span>
   </div>
-</div>
+  
+ </option>
 </body>
 </html>

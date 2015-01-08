@@ -1,7 +1,6 @@
 <?php ob_start();
-	session_start();
 
-$yourfile = $_SESSION['fname'];
+$yourfile = $_COOKIE['fname'];
 
 $file_name = basename($yourfile);
 

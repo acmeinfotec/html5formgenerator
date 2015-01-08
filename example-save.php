@@ -1,4 +1,4 @@
-o
+
 <?php 
 	
 	session_start();
@@ -8,8 +8,8 @@ o
 	$size = count( $a );
 	$style_no = $a [ $size - 1 ][ 'style_number' ];
 	$color_name = $a [ $size - 1 ][ 'color_name' ];
-	$styles = file_get_contents("css/style/css-".$style_no.".css");
-	$styles .= file_get_contents("css/color/".$color_name.".css");
+	$styles = file_get_contents("css/style/html5-form-generator-style-".$style_no.".css");
+	$styles .= file_get_contents("css/color/html5-form-generator-color-".$color_name.".css");
 	$getJs = file_get_contents('js/style.js');
 	
 	file_put_contents( "myfile.txt", $color_no );
@@ -164,9 +164,12 @@ o
 //	$outStr .= "</table></form> </body> </html>";
 	$outStr .= "<div class='row'><span><input type='submit' name='submit' value='Submit' /></span></div></body></table>";
 	
-	$filename = "downloads/output/HTMl5FormGenerator_".date("dmY")."_".time().".html";
-	
-	$_SESSION['fname'] = $filename;	
+	$filename = "downloads/output/HTML5FormGenerator".date("dmY")."_".time().".html";
+
+	file_put_contents( $filename, $outStr );
+
+	setcookie("fname",$filename,time()+1800,"/");
+
+
 //	file_put_contents( "myfile.txt", $outStr );
-	file_put_contents( $_SESSION['fname'], $outStr );
 ?> 
