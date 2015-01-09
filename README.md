@@ -1,4 +1,4 @@
-HTML5FROMGENERATOR
+HTML5FORMGENERATOR
 ==================
 
 Html5 form Generator is just an Html5 form builder or a form generator with html5 and css3. Normally, you design a html form you might have used many html forms and also css3 style sheet in it. But in our Html5 form generator, you just add the controls that you want in your form design and also with the name to be specified during the control added. By using our html5 form generator any one can create the html form using html5 and css3 in an easy way. Whenever using html5 and css3 code for normal html form design that you have take many times to complete it and also have many problems may happen during the developing time.
